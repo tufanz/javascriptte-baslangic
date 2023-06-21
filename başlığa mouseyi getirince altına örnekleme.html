@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUFAN</title>
+</head>
+<body>
+ <h1 onmouseover="goster('1')" onmouseleave="gizle('1')">MEYVE</h1>
+ <div id="cevap1" style="color: blue; display: none;">ELMA</div>
+ 
+ <h1 onmouseover="goster('2')" onmouseleave="gizle('2')">SEBZE</h1>
+ <div id="cevap2" style="color: fuchsia; display: none;">PATATES</div>
+ 
+ <h1 onmouseover="goster('3')" onmouseleave="gizle('3')">İÇECEK</h1>
+ <div id="cevap3" style="color:yellowgreen; display: none;">SARI KOLA</div>
+ 
+ <script>
+   function goster(baslik) {
+     var cevapDiv = document.getElementById("cevap" + baslik);
+     cevapDiv.style.display = "block";
+   }
+ 
+   function gizle(baslik) {
+     var cevapDiv = document.getElementById("cevap" + baslik);
+     cevapDiv.style.display = "none";
+   }
+ </script>
+</body>
+</html>

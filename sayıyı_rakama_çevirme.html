@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sayi=prompt("2 BASAMAKLI BİR SAYI GİRİNİZ");
+       sayi=Number(sayi);
+       if(sayi<10 || sayi>99){
+        console.log("HATALI BİLGİ GİRİŞİ");
+        sayi=0;
+       }else{
+       sayi=sayi+"";//sayıyı metin haline dönüştürür
+        var birler="";
+        var onlar="";
+      switch (sayi[1]) {
+            case "1":birler="bir";
+                
+                break;
+            case "2":birler="iki";
+                
+                break;
+            case "3":birler="üç";
+                
+                break;
+            case "4":birler="dört";
+                
+                break;
+            case "5":birler="beş";
+                
+                break;
+            case "6":birler="altı";
+                
+                break;
+            case "7":birler="yedi";
+                
+                break;
+            case "8":birler="sekiz";
+                
+                break;
+            case "9":birler="dokuz";
+                
+                break;
+        
+            default:
+                break;
+        }
+
+      switch (sayi[0]) {
+            case "1":onlar="on";
+                
+                break;
+            case "2":onlar="yirmi";
+                
+                break;
+            case "3":onlar="otuz";
+                
+                break;
+            case "4":onlar="kırk";
+                
+                break;
+            case "5":onlar="elli";
+                
+                break;
+            case "6":onlar="altmış";
+                
+                break;
+            case "7":onlar="yetmiş";
+                
+                break;
+            case "8":onlar="seksen";
+                
+                break;
+            case "9":onlar="doksan";
+                
+                break;
+        
+            default:
+                break;
+        }
+        console.log(onlar+birler);
+    }
+
+
+    </script>
+</body>
+</html>

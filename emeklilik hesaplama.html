@@ -1,0 +1,71 @@
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cinsiyet = prompt("CİNSİYETİNİZİ YANZINIZ, E,K");
+        var yas= prompt("YAŞINIZI GİRİNİZ");
+        if(yas<=60 && cinsiyet=="E" || yas<=50 && cinsiyet=="K" ){ 
+        var calısma_statusu = prompt("MEMUR MUSUNUZ,E,H");
+        if(calısma_statusu=="H" ){ 
+        var prim_gunu=prompt("PRİM GÜNÜNÜZÜ GİRİNİZ" );}
+        else{
+        var ise_giris_yılı= prompt("1999 ÖNCESİNDE Mİ İŞE GİRDİNİZ,E,H");
+        var sigorta=prompt("KAÇ YILDIR SİGORTALI ÇALIŞIYORSUN");
+        }
+        
+        
+
+        if (cinsiyet=="E"){
+            if(yas>=60){ 
+                
+                console.log("tebrikler ölüme az kaldı")
+            } 
+            if(calısma_statusu=="E" && ise_giris_yılı=="E" && sigorta>=24){
+                console.log("ARTTTIIKK EYTİSİN");
+            } 
+            if (calısma_statusu=="H" && prim_gunu>=7000){
+                console.log("HAADİİ BAKAMM")
+            }
+            
+            
+            
+        }
+            
+    
+
+        if(cinsiyet=="K"){ 
+            if(yas>=50){ 
+                
+                console.log("tebrikler ölüme az kaldı")
+            } 
+            if(calısma_statusu=="E" && ise_giris_yılı=="E" && sigorta>=15){
+                console.log("ARTTTIIKK EYTİSİN");}
+            if (calısma_statusu=="H" && prim_gunu>=3600){
+                console.log("İŞÇİSİN SEN İŞÇİ KAL")
+            }
+            
+             
+        }
+        
+        }
+        else{
+            if(cinsiyet=="E"){
+                console.log("EMEKLİSİN");}
+
+            
+            else{
+                console.log("EMEKLİSİN BACIM");}
+            }
+            
+        
+
+
+    </script>
+</body>
+</html>

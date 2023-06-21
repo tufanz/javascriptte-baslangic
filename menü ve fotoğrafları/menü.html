@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>TALATI FİTNAT LOKANTASINA HOŞGELDİNUZ</h1>
+    <br />
+    <button onclick="goster('corba');" id="corba">ÇORBALAR</button>
+    <button onclick="goster('anayemek');" id="anayemek">ANA YEMEKLER</button>
+    <button onclick="goster('icecek');" id="icecek">İÇECEKLER</button>
+    <button onclick="goster('tatli');" id="tatli">TATLILAR</button>
+    
+
+    <div id="icecekbolumu">
+      <h3>İÇECEKLER</h3>
+      ASİTLİ İÇECEKLER: 15 tl<br />
+      <img width="200" src="fotolar/içecek1.jpg" alt="" />
+      <br />
+      <br />
+      ENERJİ İÇECEKLERİ: 13 TL <br />
+      <img width="200" src="fotolar/içecek2.jpg" alt="" />
+      <br />
+      <br />
+    </div>
+    <div id="corbabolumu">
+      <h3>ÇORBALAR</h3>
+      DOMATES ÇORBASI: 30 TL <br />
+      <img width="200" src="fotolar/çorba2.jpg" alt="" />
+      <br />
+      <br />
+      MERCİMEK ÇORBASI: 25 TL <br />
+      <img width="200" src="fotolar/çorba1.jpg" alt="" />
+      <br />
+      <br />
+    </div>
+    <div id="anayemekbolumu">
+      <h3>ANA YEMEKLER</h3>
+      KÖFTE: 45 tl<br />
+      <img width="200" src="fotolar/yemek2.jpg" alt="" />
+      <br />
+      <br />
+      İSKENDER: 53 TL <br />
+      <img width="200" src="fotolar/yemek1.jpg" alt="" />
+      <br />
+      <br />
+    </div>
+    <div id="tatlibolumu">
+      <h3>TATLILAR</h3>
+      PROFİTEROL: 30 TL <br />
+      <img width="200" src="fotolar/tatlı1.jpg" alt="" />
+      <br />
+      <br />
+      TULUMBA TATLISI: 25 TL <br />
+      <img width="200" src="fotolar/tatlı2.jpg" alt="" />
+      <br />
+      <br />
+    </div>
+
+    <script>
+      function butunBolumlerGizle() {
+        var icecek = document.getElementById("icecekbolumu");
+        var corba = document.getElementById("corbabolumu");
+        var anayemek = document.getElementById("anayemekbolumu");
+        var tatli = document.getElementById("tatlibolumu");
+        icecek.style.display = "none";
+        corba.style.display = "none";
+        anayemek.style.display = "none";
+        tatli.style.display = "none";
+      }
+
+      function goster(a) {
+        var icecek = document.getElementById("icecekbolumu");
+        var corba = document.getElementById("corbabolumu");
+        var anayemek = document.getElementById("anayemekbolumu");
+        var tatli = document.getElementById("tatlibolumu");
+        butunBolumlerGizle();
+        if (a == "icecek") {
+          icecek.style.display = "block";
+          document.bgColor = "yellow";
+        }
+        if (a == "corba") {
+          corba.style.display = "block";
+          document.bgColor="orange";
+        }
+        if (a == "anayemek") {
+          anayemek.style.display = "block";
+          document.bgColor="red";
+        }
+        if (a == "tatli") {
+          tatli.style.display = "block";
+          document.bgColor="violet";
+        }
+      }
+      butunBolumlerGizle();
+    </script>
+  </body>
+</html>

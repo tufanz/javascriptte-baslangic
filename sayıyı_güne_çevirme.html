@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sayi=prompt("1 ile 7 dahil olmak üzere bir sayı giriniz")
+        sayi=Number(sayi);
+        if(sayi<1 || sayi>7){
+            console.log("LÜTFEN İSTENEN SAYIYI YAZINIZ");
+            sayi=0;
+        }else{ 
+          sayi=sayi+"" ;
+          var günler="";  
+        switch (sayi) {
+                case "1":günler="pazartesi";
+                    
+                    break;
+                case "2":günler="salı";
+                    
+                    break;
+                case "3":günler="çarşamba";
+                    
+                    break;
+                case "4":günler="perşembe";
+                    
+                    break;
+                case "5":günler="cuma";
+                    
+                    break;
+                case "6":günler="cumartesi";
+                    
+                    break;
+                case "7":günler="pazar";
+        }
+        console.log(günler);
+    }
+   </script>    
+</body>
+</html>
